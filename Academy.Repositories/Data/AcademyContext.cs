@@ -15,7 +15,7 @@ namespace Academy.Repositories.Data
       public DbSet<Faculty> Faculties {set; get;}
       public DbSet<Department> Departments {set; get;}
       public DbSet<Program> Programs {set; get;}
-      public DbSet<Course> Courses {set; get;}
+      public DbSet<Core.Entities.Course> Courses {set; get;}
       
     }
 }
