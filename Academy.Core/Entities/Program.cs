@@ -9,5 +9,6 @@ namespace Academy.Core.Entities
     {
         public string Name {set; get;} = string.Empty;
         public Guid CourseId {set; get;}
+        public Course? Course {set; get;}
     }
 }
