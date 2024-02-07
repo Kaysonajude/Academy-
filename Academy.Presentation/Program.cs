@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using Academy.Repositories.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddDbContext<AcademyContext>( options =>
+options.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

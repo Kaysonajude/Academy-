@@ -6,6 +6,7 @@ namespace Academy.Repositories.Data
 {
     public class AcademyContext : DbContext
     {
+      public AcademyContext() : base(){}
       public AcademyContext(DbContextOptions<AcademyContext> options) 
       : base(options)
       {
