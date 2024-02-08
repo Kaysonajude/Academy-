@@ -17,6 +17,14 @@ namespace Academy.Repositories.Data
       public DbSet<Department> Departments {set; get;}
       public DbSet<Program> Programs {set; get;}
       public DbSet<Core.Entities.Course> Courses {set; get;}
-      
+
+        // protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // {
+        //     modelBuilder.Entity<Institution>(i=>{
+        //       i.HasKey(k=>k.Id);
+        //     });
+
+            
+        // }
     }
 }

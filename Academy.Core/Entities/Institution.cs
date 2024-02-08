@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,6 +12,6 @@ namespace Academy.Core.Entities
         public string City {set; get;}= string.Empty;
         public string State {set; get;}= string.Empty;
         public string Country {set; get;}= string.Empty;
-        public ICollection<Falculty>? Falculties{set; get;}
+        public ICollection<Faculty>? Falculties{set; get;}
     }
 }

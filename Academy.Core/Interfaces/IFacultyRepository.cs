@@ -1,3 +1,5 @@
+using Academy.Core.Entities;
+
 namespace Academy.Core.Interfaces
 {
     public interface IFacultyRepository
@@ -9,7 +11,5 @@ namespace Academy.Core.Interfaces
         Task<bool> Delete(Guid facultyId);
     }
 
-    public class Faculty
-    {
-    }
+    
 }
