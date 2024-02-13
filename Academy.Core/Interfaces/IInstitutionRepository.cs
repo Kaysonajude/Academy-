@@ -9,5 +9,6 @@ namespace Academy.Core.Interfaces
         Task<Institution> GetById(Guid institutionId);
         Task <List<Institution>> GetAll();
         Task<bool> Delete(Guid institutionId);
+        void Add(object newInstitution);
     }
 }

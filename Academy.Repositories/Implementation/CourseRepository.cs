@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Academy.Core.Interfaces;
+using Academy.Repositories.Data;
 
 namespace Academy.Repositories.Implementation
 {
     public class CourseRepository : ICourseRepository
     {
-        public Task<Course> Add(Course course)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<bool> Delete(Guid courseId)
         {
             throw new NotImplementedException();
@@ -29,6 +25,11 @@ namespace Academy.Repositories.Implementation
         }
 
         public Task<Course> Update(Course course)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Course> ICourseRepository.Add(Course course)
         {
             throw new NotImplementedException();
         }
